@@ -32,8 +32,7 @@ body{
 .link-socials{
     position: relative;
 }
-ul {
-    list-style: none;
+.link-socials {
     display: flex;
     flex-direction: row;
     margin-top: 30px;
@@ -43,12 +42,15 @@ h1{
     color: var(--text-white);
     margin-top: 10px;
     font-weight: 700;
+    font-size: 18px;
+    text-align: center;
 }
 
 h2{
     color: var(--text-white);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
+    text-align: center;
 }
 .link-socials img{
  width: 30px;
@@ -57,11 +59,13 @@ h2{
 
 .link-socials a{
     padding-right: 10px;
+    cursor: pointer;
 }
 
-.link-socials a:hover{
-    transition: var(--blue);
-    cursor: pointer;
+.link-socials svg:hover path{
+    fill: var(--blue);
+    transition: .3s;
+    
 }
 
 canvas{
